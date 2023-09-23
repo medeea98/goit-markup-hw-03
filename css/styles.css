@@ -41,6 +41,12 @@ a {
 
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 a:hover {
     color: var(--main-blue);
 }
@@ -106,7 +112,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -243,6 +249,7 @@ main {
     flex-shrink: 0;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px;
+    margin-top: 30px;
 }
 
 .first-section-button:hover {
@@ -259,6 +266,23 @@ main {
 
 .text-section {
     background-color: white;
+    width: auto;
+    margin-right: auto;
+}
+
+.container-text-section {
+    max-width: 1200px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 94px 0px 94px 0px;
+    gap: 30px;
+        
+}
+.container-text-section li {
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .subtitle {
@@ -268,22 +292,42 @@ main {
     line-height: 1.17;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    
 }
 
 .text {
     color: var(--main-grey);
     font-size: 14px;
-
+    margin-top: 10px;
     font-weight: 400;
     line-height: 1.71;
     /* 171.429% */
     letter-spacing: 0.42px;
 }
 
+/* WHAT WE DO SECTION */
+
 .what-we-do-section {
     display: block;
     background-color: white;
-    border: solid 3px red;
+    width: auto;
+    margin-right: auto;
+}
+.container-what-we-do-section {
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+}
+.what-we-do-elements {
+    display: flex;
+    padding-bottom: 94px;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+.what-we-do-elements li {
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px) / 3);
     
 }
 
@@ -294,10 +338,24 @@ main {
     line-height: 1.17;
     letter-spacing: 1.08px;
     color: var(--main-black);
+    margin-bottom: 50px;
 }
+/* OUR TEAM SECTION */
 
 .our-team-section {
     background-color: var(--background-wheat);
+    width: 100vw;   
+    width: auto;
+    margin-right: auto;
+}
+
+.container-our-team {
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    
 }
 
 .our-team-title {
@@ -307,15 +365,34 @@ main {
     line-height: 1.17;
     letter-spacing: 1.08px;
     color: var(--main-black);
+    margin-top: 94px;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
+.our-team-members {
+    display: flex;
+    padding-bottom: 94px;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+
+.our-team-members li {
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 30px) / 4);
+}
 .member-box {
     border-radius: 0px 0px 4px 4px;
-    background: #FFF;
+    background: #FFF; 
     /* material shadow v1 */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    max-width: 270px;
 }
 
+.inferior-card{
+    padding: 30px;
+}
 .our-team-name {
     text-align: center;
     font-size: 16px;
@@ -323,6 +400,7 @@ main {
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--main-black);
+    padding-top: 30px;
 }
 
 .our-team-position {
@@ -332,6 +410,28 @@ main {
     line-height: 1.17;
     letter-spacing: 0.48px;
     color: var(--main-grey);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+ 
+/* FOOTER */
+
+.global-footer {
+    background-color: var(--background-grey);
+    width: auto;
+    margin-right: auto;
+    
+}
+
+.container-footer {
+    max-width: 1200px;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 60px 0px 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
 .logo-footer {
@@ -341,11 +441,10 @@ main {
     line-height: 1.193;
     letter-spacing: 0.03em;
     text-align: left;
+    width: 145px;
 }
 
-.global-footer {
-    background-color: var(--background-grey);
-}
+
 
 .address {
     font-style: normal;
@@ -354,7 +453,11 @@ main {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.42px;
+    padding-top: 28px;
+    max-width: 231px;
 }
+
+
 
 .contact-info-footer {
     color: #FFFFFF99;
@@ -364,6 +467,21 @@ main {
     line-height: 1.14;
     /* 114.286% */
     letter-spacing: 0.42px;
+}
+
+.inferior-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: 231px;
+    padding-top: 10px;
+}
+
+.footer-phone {
+    padding-top: 10px;
+    
 }
 
 .contact-info-footer:hover {
