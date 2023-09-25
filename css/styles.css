@@ -70,9 +70,6 @@ a:active {
     color: var(--main-blue);
 }
 
-a:visited {
-    color: hsl(266, 100%, 69%);
-}
 
 button:hover {
     background-color: var(--main-blue);
@@ -90,9 +87,7 @@ button:active {
         color: #FFF;
 }
 
-button:visited {
-    color:hsl(266, 100%, 69%);
-}
+
 
 ul {
     list-style-type: none;
